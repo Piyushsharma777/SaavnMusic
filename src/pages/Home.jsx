@@ -35,6 +35,8 @@ const Home = ({ onPlay }) => {
 
     return (
         <div className="home">
+              <i class="search-icon fas fa-search"></i>
+
             <input
                 type="text"
                 placeholder="Search..."
