@@ -14,7 +14,7 @@ const CategorySection = ({ category, onPlay }) => {
             <h2 className="text-2xl font-semibold mb-2 text-white">{category}</h2>
             <div className="flex overflow-x-auto gap-2 hide-scrollbar w-full">
                 {songs.map((song) => (
-                    <div className="flex-shrink-0" key={song.id}>
+                    <div className="flex-shrink-0 overflow-hidden rounded-md" key={song.id}>
                         <MusicCard song={song} onPlay={onPlay} />
                     </div>
                 ))}

@@ -25,10 +25,8 @@ const Home = ({ onPlay }) => {
         setSearchQuery(query);
 
         if (query.trim()) {
-            // Add "Searching" category at the top dynamically
             setCategories(["Searching: " + query, ...defaultCategories]);
         } else {
-            // Reset to default categories if search is cleared
             setCategories(defaultCategories);
         }
     };

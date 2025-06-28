@@ -9,8 +9,7 @@ const Player = ({ currentSong, nextSong }) => {
     const [loop, setLoop] = useState(false);
     const [volume, setVolume] = useState(1);
     const [progress, setProgress] = useState(0);
-    const [isMuted, setIsMuted] = useState(false); // Track mute status
-
+    const [isMuted, setIsMuted] = useState(false); 
     useEffect(() => {
         if (currentSong) {
             audioRef.current.src = currentSong.media_url;
