@@ -6,7 +6,7 @@ const MusicCard = ({ song, onPlay }) => {
 
     return (
         <div
-  className="w-[100%] max-w-[80px] sm:max-w-[300px] p-2 sm:p-3 rounded-lg shadow-md cursor-pointer 
+  className="w-[100%] max-w-[100px] sm:max-w-[200px] p-2 sm:p-3 rounded-lg shadow-md cursor-pointer 
              transition-transform transform flex flex-col items-center gap-1 
              hover:scale-100 sm:hover:scale-120 bg-[#1e1e1e]"
   onClick={() => onPlay(song)}
